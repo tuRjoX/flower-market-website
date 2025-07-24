@@ -407,6 +407,13 @@ footer {
     .flower-cards {
         grid-template-columns: repeat(2, 1fr);
     }
+    .flower-title h2 {
+        font-size: 1.5rem; /* 50px */
+    }
+    .flower-title p {
+        font-size: 0.875rem; /* 14px */
+        max-width: 100%;
+    }
     /* Trusted Seller */
     .trusted-seller-section {
         margin-top: 120px;
@@ -487,18 +494,24 @@ footer {
         padding: 0 1rem;
     }
     /* Join Section */
+    .join-content h2 {
+        font-size: 1.25rem; 
+        font-weight: 700;
+        color: white;
+    }
     .join-form input[type="email"] {
-    height: 3.5rem;
-    width: 15rem; /* 500px */
+    height: 3.125rem;
+    width: 13.625rem; /* 500px */
     padding: 0 1rem;
-    font-size: 1rem;
+    font-size: 0.875rem;
     border: none;
     outline: none;
     }
     .join-form .btn {
-        width: 7rem; /* 160px */
+        width: 6.4375rem; /* 160px */
+        height: 3.125rem;
         text-align: center;
-        font-size: 1rem;
+        font-size: 0.875rem;
         padding: .75rem 1.5rem;
     }
     /* Footer */
@@ -506,7 +519,9 @@ footer {
         flex-direction: column;
         gap: 2.5rem;
     }
-
+    .footer-brand p{
+        font-size: 1rem;
+    }
     .footer-links {
         flex-direction: column;
         gap: 0;
