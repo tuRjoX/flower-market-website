@@ -431,6 +431,13 @@ footer {
     .trusted-badge {
         display: none;
     }
+    .br-breaker {
+        display: none;
+    }
+    .trusted-seller-section h1 {
+        font-size: 2rem; /* 50px */
+        font-weight: 700;
+    }
     /* Latest Deals */
     .latest-deal-cards {
         flex-direction: column;
@@ -465,7 +472,7 @@ footer {
     }
 
     .latest-header h2 {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     .latest-header p {
