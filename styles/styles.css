@@ -239,3 +239,65 @@
     cursor: pointer;
     text-shadow: 0 2px 12px rgba(0,0,0,0.14);
 }
+/* Join */
+.join-section {
+    background: url(../assets/news-letter-bg.png);
+    background-size: cover;
+    background-position: center;
+    height: 33.3125rem; /* 533px */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 7.5rem;
+    text-align: center;
+}
+
+/* Inner container for heading + form */
+.join-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+/* Heading style */
+.join-content h2 {
+    font-size: 2.75rem; /* adjust to match image */
+    font-weight: 700;
+    color: white;
+}
+
+/* Form row */
+.join-form {
+    display: flex;
+    width: fit-content;
+    border-radius: 0.25rem;
+    overflow: hidden;
+}
+
+/* Input */
+.join-form input[type="email"] {
+    height: 3.5rem;
+    width: 31.25rem; /* 500px */
+    padding: 0 1rem;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+}
+
+/* Button */
+.join-form .btn {
+    height: 3.5rem;
+    background-color: #F26C21;
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 0 2rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.join-form .btn:hover {
+    background-color: #d85f1d;
+}
