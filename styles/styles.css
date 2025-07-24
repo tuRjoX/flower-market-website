@@ -406,6 +406,9 @@ footer {
     /* Flower Collection */
     .flower-cards {
         grid-template-columns: repeat(2, 1fr);
+        transform: scale(0.8);
+        transform-origin: top left;
+        width: 100%;
     }
     .flower-title h2 {
         font-size: 1.5rem; /* 50px */
