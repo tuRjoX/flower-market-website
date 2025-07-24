@@ -127,11 +127,19 @@
     gap: 3.75rem; /* 60px */
     align-items: center;
 }
+.trusted-seller-section h1 {
+    font-size: 3.125rem; /* 50px */
+    font-weight: 700;
+}
+.trusted-seller-section li {
+    font-size: 1.375rem; /* 22px */
+    font-weight: 400;
+    margin-bottom: 1rem; /* px */
+}
 .flower-image-wrapper {
     position: relative;
     display: inline-block; 
 }
-
 .trusted-badge {
     position: absolute;
     top: -6.25rem; /* -100px */ 
@@ -140,19 +148,94 @@
     width: 17.5rem; /* 280px */
     height: 17.5rem; /* 280px */
 }
-
 .flower-image {
     display: block;
     width: 33.75rem;
 }
-
-.trusted-seller-section h1 {
+/* Latest Deals */
+.latest-deals-section {
+    max-width: 1440px;
+    margin: 0 auto;
+    margin-top: 8.3125rem; /* 133px */
+}
+.latest-header {
+    text-align: center;
+}
+.latest-header h2 {
     font-size: 3.125rem; /* 50px */
     font-weight: 700;
-    margin-bottom: 1.25rem; /* 20px */
+    margin-bottom: 1rem; /* 16px */
 }
-.trusted-seller-section li {
+.latest-header p {
     font-size: 1.375rem; /* 22px */
     font-weight: 400;
-    margin-bottom: 1.25rem; /* 20px */
+    color: rgba(0, 0, 0, 0.5);
+    max-width: 55rem; /* 880px */
+    margin: 0 auto;
+    margin-bottom: 7.5rem; /* 120px */
+}
+.latest-deal-cards {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 2rem;
+}
+
+/* Left Side - Two Small Cards */
+.deal-side {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* Common Deal Card Styling */
+.deal-card {
+    position: relative;
+    border-radius: 1.2rem;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(78, 71, 255, 0.13);
+}
+
+.deal-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1.2rem;
+}
+
+/* Overlay Style */
+.deal-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.13) 70%, rgba(0,0,0,0.02) 100%);
+    text-align: center;
+}
+
+/* Text Styling */
+.deal-title {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.4rem;
+    text-shadow: 0 2px 12px rgba(0,0,0,0.22);
+}
+.deal-card.small .deal-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.deal-link {
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-decoration: underline;
+    cursor: pointer;
+    text-shadow: 0 2px 12px rgba(0,0,0,0.14);
 }
