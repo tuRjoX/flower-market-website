@@ -123,6 +123,36 @@
     display: flex;
     max-width: 1440px;
     margin: 0 auto;
-    margin-top: 7.5rem; /* 120px */
-    text-align: center;
+    margin-top: 13.125rem; /* 210px */
+    gap: 3.75rem; /* 60px */
+    align-items: center;
+}
+.flower-image-wrapper {
+    position: relative;
+    display: inline-block; 
+}
+
+.trusted-badge {
+    position: absolute;
+    top: -6.25rem; /* -100px */ 
+    left: 100%;
+    transform: translateX(-50%);
+    width: 17.5rem; /* 280px */
+    height: 17.5rem; /* 280px */
+}
+
+.flower-image {
+    display: block;
+    width: 33.75rem;
+}
+
+.trusted-seller-section h1 {
+    font-size: 3.125rem; /* 50px */
+    font-weight: 700;
+    margin-bottom: 1.25rem; /* 20px */
+}
+.trusted-seller-section li {
+    font-size: 1.375rem; /* 22px */
+    font-weight: 400;
+    margin-bottom: 1.25rem; /* 20px */
 }
