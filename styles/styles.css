@@ -366,8 +366,9 @@ footer {
 @media screen and (max-width: 750px) {
     /* Banner */
     .navbar {
-        justify-content: space-between;
+        display: flex;
         align-items: center;
+        gap: 1rem; 
     }
 
     .nav-links {
@@ -415,8 +416,8 @@ footer {
         margin-top: 4rem;
     }
     .flower-image-wrapper {
-        padding-left: 15px;
-        padding-right: 15px;
+        width: 100%;
+        max-width: 100%;
         box-sizing: border-box;
     }
     .flower-image {
