@@ -11,9 +11,33 @@
   font-optical-sizing: auto;
   font-style: normal;
 }
+
 /* Shared Styles */
 .display-flex {
   display: flex;
+}
+.btn {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #FFFFFF;
+  background-color: #E95A08;
+  padding: 0.75rem 3rem;
+  border: 2px solid transparent;
+  cursor: pointer;
+  width: 16.875rem; /* 270px */
+  transition: 
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    background-color 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease;
+}
+.btn:hover {
+  transform: scale(1.05);
+  background-color: #FFFFFF;
+  color: #E95A08;
+  border-color: #E95A08;
+  box-shadow: 0 8px 20px rgba(78, 71, 255, 0.15);
 }
 .orange{
     color: #E95A08;
@@ -21,7 +45,7 @@
 .light-gray{
     color: rgba(0, 0, 0, 0.5);
 }
-/* Header Styles */
+
 /* Navbar Styles */
 .navbar{
     justify-content: space-between;
@@ -35,7 +59,7 @@
     font-size: 500;
 }
 .navbar,
-.banner {
+.banner{
     max-width: 1440px;
     margin: 0 auto;
     gap: 19rem; /* 304px */
@@ -53,4 +77,52 @@
     margin-top: 0.625rem; /* 10px */
     font-size: 1.375rem; /* 22px */
     font-weight: 400;
+}
+/* Flower Collection */
+.flower-collection {
+    max-width: 1440px;
+    margin: 0 auto;
+    margin-top: 7.5rem; /* 120px */
+}
+.flower-title{
+    text-align: center;
+}
+.flower-title h2 {
+    font-size: 3.125rem; /* 50px */
+    font-weight: 700;
+    margin-bottom: 1rem; /* 16px */
+}
+.flower-title p {
+    font-size: 1.375rem; /* 22px */
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.5);
+    max-width: 55rem; /* 880px */
+    margin: 0 auto;
+}
+.flower-cards{
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.25rem; /* 20px */
+    margin-top: 3rem; /* 48px */
+    text-align: center;
+}
+.card h4 {
+    font-size: 1.375rem; /* 22px */
+    margin: 0.5rem 0; /* 8px */
+    font-weight: bold;
+}
+.card h5 {
+    font-size: 1.375rem; /* 22px */
+    margin: 0.5rem 0; /* 8px */
+    font-weight: 500;
+}
+
+/* Trusted Seller Section */
+.trusted-seller-section{
+    display: flex;
+    max-width: 1440px;
+    margin: 0 auto;
+    margin-top: 7.5rem; /* 120px */
+    text-align: center;
 }
