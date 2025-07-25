@@ -143,13 +143,18 @@
     position: relative;
     display: inline-block; 
 }
+@keyframes spinWithTranslate {
+    0% { transform: translateX(-50%) rotate(0deg); }
+    100% { transform: translateX(-50%) rotate(360deg); }
+}
 .trusted-badge {
     position: absolute;
     top: -6.25rem; /* -100px */ 
     left: 100%;
-    transform: translateX(-50%);
     width: 17.5rem; /* 280px */
     height: 17.5rem; /* 280px */
+    animation: spinWithTranslate 5s linear infinite;
+    transform: translateX(-50%); /* initial position */
 }
 .flower-image {
     display: block;
