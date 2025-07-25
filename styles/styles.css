@@ -154,7 +154,7 @@
     width: 17.5rem; /* 280px */
     height: 17.5rem; /* 280px */
     animation: spinWithTranslate 5s linear infinite;
-    transform: translateX(-50%); /* initial position */
+    transform: translateX(-50%); 
 }
 .flower-image {
     display: block;
@@ -584,4 +584,70 @@ footer {
         gap: 1.2rem;
     }
 }
+
+/* For Iphone 13 */
+@media (max-width: 390px) {
+  /* Flower Collection */
+  .flower-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .flower-title h2 {
+    font-size: 1.5rem; /* 24px approx */
+  }
+
+  .flower-title p {
+    font-size: 0.875rem; /* 14px */
+    max-width: 100%;
+  }
+
+  .card img {
+    width: 100%;
+    height: auto;
+    max-width: 180px;
+    max-height: 270px;
+    object-fit: cover;
+  }
+
+  .btn {
+    font-weight: 600;
+    font-size: 0.875rem; /* 14px */
+    color: #FFFFFF;
+    background-color: #E95A08;
+    padding: 0.75rem 1.5rem;
+    border: 2px solid transparent;
+    cursor: pointer;
+    width: 100%;
+    max-width: 200px;
+    transition: 
+      transform 0.3s ease,
+      box-shadow 0.3s ease,
+      background-color 0.3s ease,
+      color 0.3s ease,
+      border-color 0.3s ease;
+  }
+
+  .btn:hover {
+    transform: scale(1.05);
+    background-color: #FFFFFF;
+    color: #E95A08;
+    border-color: #E95A08;
+    box-shadow: 0 8px 20px rgba(78, 71, 255, 0.15);
+  }
+
+  .card h5 {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+    font-weight: 500;
+  }
+
+  .card h4 {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+    font-weight: bold;
+  }
+}
+
 
